@@ -1,0 +1,24 @@
+{
+  "name": "proyecto_tero",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+		"sass:watch": "sass --watch scss/main.scss  css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmriccardi/PreEntrega2-Riccardi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nmriccardi/PreEntrega2-Riccardi/issues"
+  },
+  "homepage": "https://github.com/nmriccardi/PreEntrega2-Riccardi#readme",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}

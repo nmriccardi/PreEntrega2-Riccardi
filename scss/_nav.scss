@@ -1,0 +1,19 @@
+.nav-hover:hover{
+    color: black;
+    transform: translateY(-3px);
+    cursor: pointer;
+    transition: all 1s;
+    
+ }
+
+ .nav-text{
+    color:$mainColor;
+    font-family: $mainFont;
+    font-size: $FontNav;
+ }
+
+ .nav-position{
+    position: sticky;
+    top: 0px;   
+    left: 0px;
+     }

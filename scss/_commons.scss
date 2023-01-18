@@ -1,0 +1,27 @@
+//Caracteristicas de texto
+.text-center{
+    text-align: center;
+    color: $mainColor;
+    font-size: $FontTitulos;
+}
+
+.text-footer{
+    color: $mainColor;
+    font-family: $mainFont;
+  }
+
+  //Fondo de colores
+.bg-naranja{
+    background-color: $secundaryColor;
+    font-family: $mainFont;  
+}
+
+//Ubicacion
+
+.caja1{
+    z-index: -1;
+ }  
+
+ .caja2{
+    z-index: 1;
+ }  
