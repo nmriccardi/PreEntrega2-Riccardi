@@ -1,0 +1,72 @@
+//galeria index
+#galeria{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    grid-template-areas:
+    "fotA" "fotB" "fotC";
+    img{
+        width: 100%;
+        height: 100%;
+        }
+    .fot-a{
+        grid-area: fotA;
+        }
+    .fot-b{
+            grid-area: fotB;
+            }
+    .fot-c{
+            grid-area: fotC;
+            }
+    @media (min-width:768px) {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: repeat(2, 30vh);
+        grid-template-areas: 
+        "fotA fotB"
+        "fotA fotC"
+          }
+    }
+
+#galeriaclub{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr;
+    grid-template-areas:
+    "fot1" "fot2" "fot3" "fot4" "fot5" "fot6";
+    img{
+        width: 100%;
+        height: 100%;
+        }
+    .fot-1{
+        grid-area: fot1;
+        }
+    .fot-2{
+        grid-area: fot2;
+        }
+    .fot-3{
+        grid-area: fot3;
+         }
+    .fot-4{
+        grid-area: fot4;
+         }
+    .fot-5{
+        grid-area: fot5;
+         }
+    .fot-6{
+        grid-area: fot6;
+         }
+
+
+    @media (min-width:768px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 30vh);
+        grid-template-areas: 
+        "fot1 fot1 fot2"
+        "fot1 fot1 fot3"
+        "fot5 fot4 fot6"
+          }
+          
+    }
+
+
+

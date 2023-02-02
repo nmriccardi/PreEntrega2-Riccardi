@@ -11,14 +11,14 @@
   </head>
   <body>
     <!-- inicio de nav -->
-    <nav class="navbar navbar-dark navbar-expand-lg bg-naranja nav-position">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-naranja nav-position caja2">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo del club los teros">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">  
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link fs-6 fw-bold nav-hover nav-text" aria-current="page" href="index.html">HOME</a>
@@ -47,34 +47,43 @@
     </nav>
       <!-- cierro de nav -->
 
-    <header>
-      <!-- Imagen del club-->
-      <img src="img/header/index/header.jpg" class="img-fluid" alt="club los teros">
-      <!-- Imagen del club-->
+    <header id="galeria">
+      <!-- Imagenes de header-->
+      <div class="fot-a">
+      <img src="img/header/index/header.jpg" class="" alt="club los teros">
+    </div>
+    <div class="fot-b">
+      <a href="page/socios.html"><img src="img/header/index/SOCIOS.jpg"  alt="club los teros"></a>
+    </div>
+    <div class="fot-c">
+      <a href="page/deportes.html"><img src="img/header/index/compra.jpg" alt="club los teros">
+      </a>
+    </div>
+      <!-- Imagenes de header-->
     </header>
 
     <main>
         <!-- empresas que nos acompañan-->
-      <section class="container-fluid">
+      <section class="p-5 container-fluid">
           <h1 class="py-2 text-center wow fadeInLeft"> EMPRESAS QUE NOS ACOMPAÑAN</h1>
-          <div class="row wow fadeInLeft"> 
+          <div class="row wow fadeInLeft caja1">   
             <!-- empresa que nos acompaña 1-->
             <article class="py-2 col-sm-12 col-md-6 col-lg-3 mb-2">
-                <a href="http://adidas.com.ar" target="_blank"><img src="img/Main/index/adidas.png" class="card-img-top w-100" alt="adidas"></a>
+                <a href="http://adidas.com.ar" target="_blank"><img src="img/Main/index/adidas.png" class="card-img-top w-75 publicidad" alt="adidas"></a>
             </article>
             <!-- empresa que nos acompaña 2-->
             <article class="py-2 col-sm-12 col-md-6 col-lg-3 mb-2">
-              <a href="http://personal.com.ar" target="_blank"><img src="img/Main/index/Logo Personal.png" class="card-img-top w-100" alt="personal"></a>
+              <a href="http://personal.com.ar" target="_blank"><img src="img/Main/index/Logo Personal.png" class="card-img-top w-75 publicidad" alt="personal"></a>
             </article>
             <!-- empresa que nos acompaña 3-->
            <article class="py-2 col-sm-12 col-md-6 col-lg-3 mb-2">
-            <a href="http://https://remolquesindecar.com.ar/" target="_blank"><img src="img/Main/index/indecar.png" class="card-img-top w-100" alt="indecar"></a>
+            <a href="http://https://remolquesindecar.com.ar/" target="_blank"><img src="img/Main/index/indecar.png" class="card-img-top w-75 publicidad" alt="indecar"></a>
            </article>
             <!-- empresa que nos acompaña 4-->
            <article class="py-2 col-sm-12 col-md-6 col-lg-3 mb-2">
-            <a href="http://https://www.xn--superoroo-s6a.com/" target="_blank"><img src="img/Main/index/superoronoo.png" class="card-img-top w-100" alt="supermercado oroño"></a>
+            <a href="http://https://www.xn--superoroo-s6a.com/" target="_blank"><img src="img/Main/index/superoronoo.png" class="card-img-top w-75 publicidad" alt="supermercado oroño"></a>
            </article>
-          </div>
+          </div>  
       </section>
              <!-- Nosotros-->
       <section class="py-4">
@@ -86,7 +95,13 @@
             <div class="col-md-8">
               <div class="card-body">
                 <h1 class="card-title text-center wow fadeInLeft">NOSOTROS</h1>
-                <p class="card-text py-2 px-4">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus excepturi, inventore at mollitia laborum numquam ex, pariatur nisi culpa suscipit sit atque possimus quo consectetur quos libero iure officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique suscipit natus quia architecto distinctio quod consequatur animi, iure ipsam eos voluptatem laborum sit, vel quaerat. Deserunt similique assumenda facilis.</p>
+                <p class="card-text py-2 px-4 text-main">Los clubes barriales, siempre se caracterizaron por su función social, cultural y participativa.
+                  Asimismo, uno de los aspectos más relevantes del club, siempre fue el “deportivo”. Logrando
+                  ofrecer, a través de las diferentes propuestas, un importante número de actividades (tanto
+                  para mujeres como varones) con un alto nivel de participación.
+                  Tienen una función inigualable, allí se experimentan el compromiso, la participación, la
+                  confianza en uno mismo, el respeto y el compañerismo, valores que se proyectan a lo largo de
+                  toda la vida </p>
               </div>
             </div>
           </div>
@@ -172,5 +187,17 @@
        new WOW().init();
        </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script>
+        $(function(){
+          $(document).scroll(function(){
+              if($(this).scrollTop() > 1) {
+                  $('#logo').attr('src','http://wowslider.com/images/data/images/slide1.png')
+              }
+              if($(this).scrollTop() < 1) {        
+               $('#logo').attr('src','https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png');   
+              }
+          });
+      });
+  </script>
       </body>
 </html>

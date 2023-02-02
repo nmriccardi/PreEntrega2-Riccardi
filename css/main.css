@@ -5,6 +5,11 @@
   font-size: 2rem;
 }
 
+.text-main {
+  text-align: justify;
+  font-size: "Roboto", sans-serif;
+}
+
 .text-footer {
   color: rgb(232, 107, 0);
   font-family: "Open Sans", sans-serif;
@@ -23,6 +28,38 @@
   z-index: 1;
 }
 
+@media (min-width: 768px) {
+  .publicidad {
+    filter: grayscale(1);
+  }
+}
+.publicidad:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+  transition: all 1s;
+  filter: none;
+}
+
+.text-socios {
+  text-align: center;
+  color: white;
+  background-color: black;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+@media (min-width: 768px) {
+  .imagenes-club {
+    filter: grayscale(1);
+  }
+}
+.imagenes-club:hover {
+  cursor: pointer;
+  transition: all 1s;
+  filter: none;
+}
+
 .nav-hover:hover {
   color: black;
   transform: translateY(-3px);
@@ -31,7 +68,7 @@
 }
 
 .nav-text {
-  color: rgb(255, 255, 255);
+  color: white;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -39,6 +76,69 @@
   position: sticky;
   top: 0px;
   left: 0px;
+}
+
+#galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+  grid-template-areas: "fotA" "fotB" "fotC";
+}
+#galeria img {
+  width: 100%;
+  height: 100%;
+}
+#galeria .fot-a {
+  grid-area: fotA;
+}
+#galeria .fot-b {
+  grid-area: fotB;
+}
+#galeria .fot-c {
+  grid-area: fotC;
+}
+@media (min-width: 768px) {
+  #galeria {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 30vh);
+    grid-template-areas: "fotA fotB" "fotA fotC";
+  }
+}
+
+#galeriaclub {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6fr;
+  grid-template-areas: "fot1" "fot2" "fot3" "fot4" "fot5" "fot6";
+}
+#galeriaclub img {
+  width: 100%;
+  height: 100%;
+}
+#galeriaclub .fot-1 {
+  grid-area: fot1;
+}
+#galeriaclub .fot-2 {
+  grid-area: fot2;
+}
+#galeriaclub .fot-3 {
+  grid-area: fot3;
+}
+#galeriaclub .fot-4 {
+  grid-area: fot4;
+}
+#galeriaclub .fot-5 {
+  grid-area: fot5;
+}
+#galeriaclub .fot-6 {
+  grid-area: fot6;
+}
+@media (min-width: 768px) {
+  #galeriaclub {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 30vh);
+    grid-template-areas: "fot1 fot1 fot2" "fot1 fot1 fot3" "fot5 fot4 fot6";
+  }
 }
 
 .contenedor {

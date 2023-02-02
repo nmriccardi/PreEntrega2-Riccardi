@@ -5,6 +5,10 @@
     font-size: $FontTitulos;
 }
 
+.text-main{
+  text-align: justify;
+  font-size: $secondaryFont;
+}
 .text-footer{
     color: $mainColor;
     font-family: $mainFont;
@@ -25,3 +29,35 @@
  .caja2{
     z-index: 1;
  }  
+
+ .publicidad{
+    @media (min-width:768px){
+        filter: grayscale(1);
+    }
+  &:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+    transition: all 1s;
+    filter:none;
+         }
+}
+ .text-socios{
+  text-align: center;
+  color: $ColorFont;
+  background-color: black;
+  font-size: $FontSubTitulos;
+  padding: 1rem;
+  margin: 1rem;
+ }
+
+
+  .imagenes-club{
+    @media (min-width:768px){
+        filter: grayscale(1);
+    }
+  &:hover{
+    cursor: pointer;
+    transition: all 1s;
+    filter:none;
+         }
+        }
